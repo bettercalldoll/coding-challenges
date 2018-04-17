@@ -1,4 +1,4 @@
-let solutions = require('./solution.js');
+let solutions = require('./4-16-2018.solution.js');
 
 describe('Challenge 1.1 - Pounds to Kilograms', () => {
   it('9 lb - 4.082 kg', () => {
