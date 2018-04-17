@@ -11,10 +11,10 @@ describe('Challenge 1.1 - Pounds to Kilograms', () => {
 
 describe('Challenge 1.2 - Kilograms to Pounds', () => {
   it('27.216 kg - 60 lb', () => {
-    expect(solutions.poundsToKilograms(27.216)).toBe(60);
+    expect(solutions.kilogramsToPounds(27.216)).toBe(60);
   })
   it('453.592 kg - 1000 lb', () => {
-    expect(solutions.poundsToKilograms(453.592)).toBe(1000);
+    expect(solutions.kilogramsToPounds(453.592)).toBe(1000);
   })
 });
 
@@ -29,13 +29,13 @@ describe('Challenge 1.3 - Palindrome', () => {
     expect(solutions.palindrome('bettercalldoll')).toBe(false);
   })
   it('YAAAS - FALSE', () => {
-    expect(solutions.palindrome('Eva, Can I Stab Bats In A Cave?')).toBe(false);
+    expect(solutions.palindrome('YAAAS')).toBe(false);
   })
 });
 
 describe('Challenge 1.4 - Coin Counter', () => {
   it('$0.27', () => {
-    expect(solutions.coinCounter(1.25)).toBe({
+    expect(solutions.coinCounter(.27)).toEqual({
       quarters: 1,
       dimes: 0,
       nickels: 0,
@@ -44,7 +44,7 @@ describe('Challenge 1.4 - Coin Counter', () => {
     });
   })
   it('$1.25', () => {
-    expect(solutions.coinCounter(1.25)).toBe({
+    expect(solutions.coinCounter(1.25)).toEqual({
       quarters: 5,
       dimes: 0,
       nickels: 0,
@@ -53,7 +53,7 @@ describe('Challenge 1.4 - Coin Counter', () => {
     });
   })
   it('$2.37', () => {
-    expect(solutions.coinCounter(2.37)).toBe({
+    expect(solutions.coinCounter(2.37)).toEqual({
       quarters: 9,
       dimes: 1,
       nickels: 0,
@@ -62,7 +62,7 @@ describe('Challenge 1.4 - Coin Counter', () => {
     });
   })
   it('$1.91', () => {
-    expect(solutions.coinCounter(1.91)).toBe({
+    expect(solutions.coinCounter(1.91)).toEqual({
       quarters: 7,
       dimes: 1,
       nickels: 1,
