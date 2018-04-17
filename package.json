@@ -1,0 +1,23 @@
+{
+  "name": "coding-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bettercalldoll/coding-challenges.git"
+  },
+  "author": "ryandoll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bettercalldoll/coding-challenges/issues"
+  },
+  "homepage": "https://github.com/bettercalldoll/coding-challenges#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
